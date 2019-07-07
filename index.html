@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lara Darine</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- layout 3 -->
+    <div id="container">
+        <!-- layout 1 -->
+        <div id="logo">
+            <img src="http://www.awfarmarket.com/img/general/top_bar_01.png" alt="Awfar logo">
+        </div>
+        <!-- layout 2 -->
+        <div id="menu">
+            <div id="apps">
+                <img src="http://www.awfarmarket.com/img/general/toplinks-02.png" alt="Android">
+                <img src="http://www.awfarmarket.com/img/general/toplinks-03.png" alt="Apple">
+            </div>
+            <div id="lang" class="left-border">
+                <div class="icons">
+                    <img src="http://www.awfarmarket.com/img/general/toplinks-04.png" alt="Map">
+                </div>
+                <div class="choice">
+                    <select name="language" id="language">
+                        <option value="english">English</option>
+                        <option value="arabic">عربي</option>
+                    </select>
+                </div>
+            </div>
+            <div id="profile" class="left-border">
+                <div class="icons">
+                    <img src="http://www.awfarmarket.com/img/general/toplinks-04.png" alt="User">
+                </div>
+                <div class="choice">
+                    <select name="user" id="user">
+                        <option value="sawsan">Sawsan</option>
+                        <option value="settings">Settings</option>
+                        <option value="logout">Logout</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="test">
+        <div class="test" id="border">
+            <h2>Layout</h2>
+            <label for="div1" class="border inputs"> Layout 1
+                <input type="checkbox" name="div1">
+                <span class="checkmark"></span>
+            </label>
+            <label for="div2" class="border inputs"> Layout 2
+                <input type="checkbox" name="div2">
+                <span class="checkmark"></span>
+            </label>
+            <label for="div3" class="border inputs"> Layout 3
+                <input type="checkbox" name="div3">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    
+        <div class="test" id="radio">
+            <h2>Border type</h2>
+            <label class="type inputs"> Dotted
+                <input type="Radio" name="radio" id="dotted" onclick="if(this.checked){changeBorderType(id)}" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="type inputs"> Solid
+                <input type="Radio" name="radio" id="solid" onclick="if(this.checked){changeBorderType(id)}">
+                <span class="checkmark"></span>
+            </label>
+            <label class="type inputs"> Dashed
+                <input type="Radio" name="radio" id="dashed" onclick="if(this.checked){changeBorderType(id)}">
+                <span class="checkmark"></span>
+            </label>
+            <label class="type inputs"> Double
+                <input type="Radio" name="radio" id="double" onclick="if(this.checked){changeBorderType(id)}">
+                <span class="checkmark"></span>
+            </label>
+            <label class="type inputs"> Groove
+                <input type="Radio" name="radio" id="groove" onclick="if(this.checked){changeBorderType(id)}">
+                <span class="checkmark"></span>
+            </label>
+            <label class="type inputs"> Ridge
+                <input type="Radio" name="radio" id="ridge" onclick="if(this.checked){changeBorderType(id)}">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
